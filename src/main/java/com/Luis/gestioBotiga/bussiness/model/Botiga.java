@@ -1,7 +1,6 @@
 package com.Luis.gestioBotiga.bussiness.model;
 
 import java.io.Serializable;
-import java.util.Objects;
 
 public class Botiga implements Serializable {
 
