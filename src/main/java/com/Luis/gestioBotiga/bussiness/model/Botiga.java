@@ -2,18 +2,29 @@ package com.Luis.gestioBotiga.bussiness.model;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table (name="BOTIGUES")
 public class Botiga implements Serializable {
 
 	
 	private static final long serialVersionUID = 1L;
-	
+	@Id
 	private Long id;
+	
 	private String name;
 	private String adress;
 	private boolean open;
+	@Enumerated(EnumType.STRING)
 	private District district;
+	@Enumerated(EnumType.STRING)
 	private Sector sector;
+	@Enumerated(EnumType.STRING)
 	private Subsector subsector;
 	private boolean franquicia;
 	

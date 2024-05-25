@@ -10,5 +10,7 @@ public interface BotigaServices {
 	Optional<Botiga> read (long id);
 	
 	List<Botiga>getAll();
+	void delete(Long id);
+	void update(Botiga botiga);
 	
 }
